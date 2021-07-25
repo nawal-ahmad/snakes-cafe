@@ -52,8 +52,9 @@ def handle_order():
             break
         for item in menu:
             if order == item:
+                menu[item]+=1
                 print(
-                    f"order of {item} have been added to your meal")
+                    f" {menu[item]} order of {item} have been added to your meal")
                 break
         else:
             print("This order is not available")
